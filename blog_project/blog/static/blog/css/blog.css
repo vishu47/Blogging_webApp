@@ -1,0 +1,19 @@
+body{
+  background-image: image('2.png');
+}
+.account-img {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+/* .newpost{
+  color: red;
+} */
+
+/* .navbar{
+  background-color: red !important;
+}
+.text{
+  color: red;
+} */

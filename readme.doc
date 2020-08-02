@@ -1,0 +1,14 @@
+python -m venv myenv
+Create virtual environment bu using this  (virtualenv myenv)
+activate by faloowing directory(myenv/Scripts/activate)
+install django2.1(pip install Django==2.1)
+
+load json data
+
+import json
+with open('data.json') as d:
+  post_json = json.load(d)
+for post in post_json:
+    pot  = Post(title=post['title'],content=post['content'],author_id=post['author_id'])
+
+Pagination(creating page at home page)

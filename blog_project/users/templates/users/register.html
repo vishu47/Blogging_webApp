@@ -1,0 +1,25 @@
+{% extends 'blog/base.html'%}
+<!-- load cripsy_forms_tags -->
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<div class="container border shadow mt-3">
+  <form class="form-group mt-2" method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group pt-3">
+      <legend class="border-bottom pb-2">Sign Up Today</legend>
+<!-- use cripsy for sryling using '| vertical bar' -->
+      {{ form|crispy }}
+    </fieldset>
+    <div class="form-group">
+      <input type="submit" class="btn btn-outline-info" value="Signup">
+    </div>
+    <div class="form-group border-top mt-3">
+      <small class="text-muted">
+        Already have an Account? <a class="ml=2" href="{% url 'login' %}">Sign In</a>
+      </small>
+    </div>
+  </form>
+</div>
+{% endblock %}
