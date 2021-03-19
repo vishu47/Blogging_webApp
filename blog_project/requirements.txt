@@ -11,7 +11,7 @@ cryptography==3.0
 cycler==0.10.0
 defusedxml==0.7.0rc1
 distlib==0.3.0
-Django==3.0.8
+Django==3.1.6
 django-crispy-forms==1.9.1
 django-six==1.0.4
 et-xmlfile==1.0.1
